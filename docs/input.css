@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base{
+    html{
+        scroll-behavior: smooth;
+    }
+}
+
+@layer utilities{
+    .mask-start{
+        mask-image: linear-gradient(to right,
+        transparent 0%,
+        white 30%,
+        white 70%,
+        transparent 100%
+        );
+    }
+}
+
+@font-face{
+    font-family: 'NightCore';
+    src: url('./fonts/Nightcore\ Demo.ttf');
+}
+
+@font-face{
+    font-family: 'Monster';
+    src: url('./fonts/WolvesVsMonsterSlantDEMO.otf');
+}
+
+@font-face {
+    font-family: 'IMF';
+    src: url(./fonts/IMFellDoublePicaSC-Regular.ttf);
+}
+
+@theme{
+    --font-primary:'NightCore';
+    --font-secondary:'Monster';
+    --font-tertiary: 'IMF';
+    --tracking-extra: 8px;
+    --animate-scroll_left: scroll_left 20s linear infinite; 
+    --animate-bottom_top_fast: bottom_top_fast .5s ease-out;
+    --animate-bottom_top: bottom_top 2s ease-out;
+}
+
+@keyframes scroll_left {
+to{
+    transform: translateX(-50%);
+}
+}
+
+@keyframes bottom_top_fast {
+    0%{
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes bottom_top{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
