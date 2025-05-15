@@ -33,6 +33,7 @@
 }
 
 @theme{
+    --color-principal: #EBEBEB;
     --font-primary:'NightCore';
     --font-secondary:'Monster';
     --font-tertiary: 'IMF';
@@ -40,6 +41,7 @@
     --animate-scroll_left: scroll_left 20s linear infinite; 
     --animate-bottom_top_fast: bottom_top_fast .5s ease-out;
     --animate-bottom_top: bottom_top 2s ease-out;
+    
 }
 
 @keyframes scroll_left {

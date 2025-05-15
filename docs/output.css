@@ -377,6 +377,7 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
+    --color-principal: #EBEBEB;
     --font-primary: 'NightCore';
     --font-secondary: 'Monster';
     --font-tertiary: 'IMF';
@@ -759,8 +760,11 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-green-700 {
-    background-color: var(--color-green-700);
+  .bg-principal {
+    background-color: var(--color-principal);
+  }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
   }
   .bg-\[url\(\'\.\/images\/PORT_TATU1--MOD\.webp\'\)\] {
     background-image: url('./images/PORT_TATU1--MOD.webp');
@@ -806,12 +810,6 @@
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
-  }
-  .pb-10 {
-    padding-bottom: calc(var(--spacing) * 10);
-  }
-  .pb-50 {
-    padding-bottom: calc(var(--spacing) * 50);
   }
   .text-center {
     text-align: center;
