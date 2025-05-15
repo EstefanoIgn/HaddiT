@@ -83,7 +83,7 @@
     </section>
 
     <!-- SECCION GALERIA -->
-    <div class="w-full h-screen grid place-content-center py-2 px-4 bg-black relative" id="gallery">
+    <div class="w-full min-h-screen grid place-content-center py-2 px-4 bg-black relative" id="gallery">
         <div class="absolute bottom-0 w-full">
             <img src="./images/PORTADA_BOTTOM.png" class="h-auto w-full">
         </div>
@@ -146,7 +146,7 @@
             let scrollTop = document.documentElement.scrollTop;
             for (let i = 0; i < animado.length; i++) {
                 let alturaAnimado = animado[i].offsetTop;
-                if (alturaAnimado - 500 < scrollTop) {
+                if (alturaAnimado - 600 < scrollTop) {
                     animado[i].style.opacity = 1;
                     animado[i].classList.add("animate-bottom_top_fast");
                 }
