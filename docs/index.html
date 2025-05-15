@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- MENU DE NAVEGACION -->
-    <div class="w-full h-screen bg-[url('./images/PORT_TATU2--MOD.webp')] bg-cover bg-center">
+    <div class="w-full h-screen bg-[url('./images/PortadaWeb.webp')] bg-cover bg-center">
         <nav class="w-full h-20 fixed flex justify-between items-center p-2 border border-green-400 z-10" id="nav__container">
             <div class="flex items-center gap-2 border border-white">
                 <a href="#" class="tracking-widest text-5xl text-white font-primary z-10">Haddi</a>
@@ -22,12 +22,12 @@
 
             <input type="checkbox" class="peer hidden" id="input__toggle">
 
-            <ul class="fixed bg-black inset-0 grid place-content-center gap-8 text-center translate-x-[-100%] peer-checked:translate-x-0 transition-all duration-500 py-6 px-[5%]">
+            <ul class="fixed bg-black inset-0 grid place-content-center gap-8 text-center translate-x-[-100%] peer-checked:translate-x-0 transition-all duration-500 py-6 px-[5%] md:static md:flex md:items-center md:justify-end md:bg-transparent md:translate-x-0  border border-orange-700">
                 <li class="font-secondary text-white cursor-pointer hover:opacity-50 menu-option"><a href="#gallery">Galeria</a></li>
                 <li class="font-secondary text-white cursor-pointer hover:opacity-50 menu-option"><a href="#about-me">Sobre Mi</a></li>
                 <li class="font-secondary text-white cursor-pointer hover:opacity-50 menu-option"><a href="#testimony">Testimonios</a></li>
             </ul>
-            <label for="input__toggle" class="bg-[url(./assets/menu.svg)] bg-cover w-10 h-10 z-10 cursor-pointer peer-checked:bg-[url('./assets/close.svg')] transition-all duration-700 "></label>
+            <label for="input__toggle" class="bg-[url(./assets/menu.svg)] bg-cover w-10 h-10 z-10 cursor-pointer peer-checked:bg-[url('./assets/close.svg')] transition-all duration-700 md:hidden"></label>
         </nav>
         <div class="w-full h-full grid place-content-center border border-orange-400">
             <section class="text-center border border-blue-400">
