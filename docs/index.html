@@ -90,8 +90,9 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="w-full h-max  bg-principal pt-4">
-        <div class="grid grid-cols-1 gap-7 justify-between text-center w-[90%] mx-auto md:grid-cols-3">
+            <div class="w-full h-max  bg-principal pt-4">
+            <div class="grid grid-cols-1 gap-7 justify-between text-center w-[90%] mx-auto md:grid-cols-3 min-h-[300px]">
+
             <div class="flex justify-center items-center opacity-0 anipacity">
                 <a href="#" class="font-primary tracking-widest text-5xl text-black z-10">Haddi Tatoo</a>
             </div>
@@ -100,8 +101,7 @@
                 <p class="mb-2">Calle 45 Numero 1758 Colonia Caroya Cordoba Argentina 📍</p>
             </div>
             <div>
-                <h2 class="uppercase font-secondary mb-3 opacity-0 anipacity animate-early">Siguenos</h2>
-
+                <h2 class="uppercase font-secondary mb-3 opacity-0 anipacity">Siguenos</h2>
                 <div>
                     <a href="#" class="inline-block w-11 h-11 mr-3">
                         <img src="./assets/facebook-circle.svg" class="w-full h-full">
@@ -146,13 +146,12 @@
             let scrollTop = document.documentElement.scrollTop;
             for (let i = 0; i < animado.length; i++) {
                 let alturaAnimado = animado[i].offsetTop;
-                let margen = animado[i].classList.contains("animate-early") ? 650 : 600;
-                if (alturaAnimado - margen < scrollTop) {
+                if (alturaAnimado - 600 < scrollTop) {
                     animado[i].style.opacity = 1;
                     animado[i].classList.add("animate-bottom_top_fast");
                 }
-    }
-}
+            }
+        }
 
         window.addEventListener('scroll', mostrarScroll);  
     </script>
